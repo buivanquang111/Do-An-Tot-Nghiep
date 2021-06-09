@@ -1,0 +1,58 @@
+package com.example.thuctaptotnghiep;
+
+public class Server {
+//    public static String url_login="http://192.168.0.114/thuctaptotnghiep/login.php";
+//    public static String url_register="http://192.168.0.114/thuctaptotnghiep/register.php";
+//    public static String url_getproduct="http://192.168.0.114/thuctaptotnghiep/getProduct.php";
+//    public static String url_getthuonghieu="http://192.168.0.114/thuctaptotnghiep/getThuongHieu.php";
+//    public static String url_getdetailUser="http://192.168.0.114/thuctaptotnghiep/getDetailUser.php";
+//    public static String url_getSearchProduct="http://192.168.0.114/thuctaptotnghiep/getSearchProduct.php";
+//    public static String url_getProductWithThuonghieu="http://192.168.0.114/thuctaptotnghiep/getProductWithThuongHieu.php";
+
+    public static String url_login="http://thuctap2021.000webhostapp.com/login.php";
+    public static String url_register="http://thuctap2021.000webhostapp.com/register.php";
+    public static String url_getproduct="http://thuctap2021.000webhostapp.com/getProduct.php";
+    public static String url_getthuonghieu="http://thuctap2021.000webhostapp.com/getThuongHieu.php";
+    public static String url_getdetailUser="http://thuctap2021.000webhostapp.com/getDetailUser.php";
+    public static String url_getSearchProduct="http://thuctap2021.000webhostapp.com/getSearchProduct.php";
+    public static String url_getProductWithThuonghieu="http://thuctap2021.000webhostapp.com/getProductWithThuongHieu.php";
+    public static String url_getProductWithTitle="http://thuctap2021.000webhostapp.com/getProductWithTitle.php";
+    public static String url_insertGiohang="http://thuctap2021.000webhostapp.com/insertgiohang.php";
+    public static String url_getgiohang="http://thuctap2021.000webhostapp.com/getgiohang.php";
+    public static String url_updatesoluonggiohang="http://thuctap2021.000webhostapp.com/updateSoLuongMuaGioHang.php";
+    public static String url_gettintuc="http://thuctap2021.000webhostapp.com/getTinTuc.php";
+    public static String url_deletegiohang="http://thuctap2021.000webhostapp.com/deletegiohang.php";
+    public static String url_getgiohangwithid="http://thuctap2021.000webhostapp.com/getgiohangwithIduserAndIdProduct.php";
+    public static String url_inserthoadon="http://thuctap2021.000webhostapp.com/insertHoaDon.php";
+    public static String url_deleteitemgiohang="http://thuctap2021.000webhostapp.com/deleteItemGioHang.php";
+    public static String url_insertyeuthich="http://thuctap2021.000webhostapp.com/insertYeuThich.php";
+    public static String url_deleteyeuthich="http://thuctap2021.000webhostapp.com/deleteYeuThich.php";
+    public static String url_getyeuthich="http://thuctap2021.000webhostapp.com/getYeuThich.php";
+    public static String url_getCountYeuThich="http://thuctap2021.000webhostapp.com/getCountYeuThich.php";
+    public static String url_getyeuthichwithiduser="http://thuctap2021.000webhostapp.com/getYeuThichWithIdUser.php";
+    public static String url_uploadImage="http://thuctap2021.000webhostapp.com/uploadImage.php";
+    public static String url_getUser="http://thuctap2021.000webhostapp.com/getUser.php";
+    public static String url_getCountGioHang="http://thuctap2021.000webhostapp.com/getCountGioHang.php";
+    public static String url_getDetailUserWithID="http://thuctap2021.000webhostapp.com/getDetailUserWithID.php";
+    public static String url_getHoaDonChoXacNhan="http://thuctap2021.000webhostapp.com/getHoaDonChoXacNhan.php";
+    public static String url_getThanhVienAdmin="http://thuctap2021.000webhostapp.com/getThanhVienAdmin.php";
+    public static String url_getSearchThanhVienAdmin="http://thuctap2021.000webhostapp.com/getSearchThanhVienAdmin.php";
+    public static String url_deleteThanhVienAdmin="http://thuctap2021.000webhostapp.com/deleteThanhVienAdmin.php";
+    public static String url_updateThanhVienAdmin="http://thuctap2021.000webhostapp.com/updateThanhVienAdmin.php";
+    public static String url_deleteSanPhamAdmin="http://thuctap2021.000webhostapp.com/deleteSanPhamAdmin.php";
+    public static String url_getSanPhamAdmin="http://thuctap2021.000webhostapp.com/getSanPhamAdmin.php";
+    public static String url_getSearchSPAdmin="http://thuctap2021.000webhostapp.com/getSearchSanPhamAdmin.php";
+    public static String url_getHoaDonAdmin="http://thuctap2021.000webhostapp.com/getHoaDonAdmin.php";
+    public static String url_xacNhanDonHangAdmin="http://thuctap2021.000webhostapp.com/XacNhanDonHangAdmin.php";
+    public static String url_updateDiaChiNguoiNhan="http://thuctap2021.000webhostapp.com/UpdateDiaChiNguoiNhan.php";
+    public static String url_themThanhVienAdmin="http://thuctap2021.000webhostapp.com/themThanhVienAdmin.php";
+    public static String url_getIDChucVu="http://thuctap2021.000webhostapp.com/getIDChucVu.php";
+    public static String url_getIdThuongHieu="http://thuctap2021.000webhostapp.com/getIdThuongHieu.php";
+    public static String url_themSanPhamAdmin="http://thuctap2021.000webhostapp.com/themSanPhamAdmin.php";
+    public static String url_getTenNhanVien="http://thuctap2021.000webhostapp.com/getTenNhanVien.php";
+    public static String url_updateNhanVienGiaoHangAdmin="http://thuctap2021.000webhostapp.com/updateNhanVienGiaoHangAdmin.php";
+    public static String url_getNhanVienGiaoHangAdmin="http://thuctap2021.000webhostapp.com/getNhanVienGiaoHangAdmin.php";
+    public static String url_updateSanPhamAdmin="http://thuctap2021.000webhostapp.com/updateSanPhamAdmin.php";
+    public static String url_xacNhanDaNhanDonHangNhanVien="http://thuctap2021.000webhostapp.com/XacNhanDaNhanDonHangNhanVien.php";
+    public static String url_khachhangxacnhanhoadon="http://thuctap2021.000webhostapp.com/khachHangXacNhanHoaDon.php";
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rvds_admin_sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#F48044">
+
+        <TextView
+            android:id="@+id/admin_txt_title_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/raleway_black"
+            android:gravity="center"
+            android:text="Danh sách sản phẩm"
+            android:textColor="@color/text"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/admin_image_timkiem_sp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/admin_txt_title_sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_image_timkiem_left_admin"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/admin_ed_timkiem_sp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/admin_txt_title_sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/admin_image_timkiem_sp"
+            android:background="@drawable/custom_ed_timkiem_right_admin"
+            android:fontFamily="@font/lato_black"
+            android:hint="tìm kiếm"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/admin_rvdanhsach_sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rvds_admin_sanpham"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button_sanpham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F38850"
+        app:srcCompat="@drawable/ic_baseline_add_24" />
+</RelativeLayout>

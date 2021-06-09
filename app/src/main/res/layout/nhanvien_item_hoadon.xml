@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/admin_nen_item">
+
+    <ImageView
+        android:id="@+id/nhanvien_image_item_hoadon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_person" />
+
+    <TextView
+        android:id="@+id/nhanvien_txttensp_hoadon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_hoadon"
+        android:fontFamily="@font/lato_black"
+        android:text="tên sp"
+        android:textColor="@color/text"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/nhanvien_txtsoluong_hoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txttensp_hoadon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_hoadon"
+        android:fontFamily="@font/lato_black"
+        android:text="số lượng"
+        android:textColor="@color/text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/nhanvien_txthoten_hoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txtsoluong_hoadon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_hoadon"
+        android:fontFamily="@font/lato_black"
+        android:text="họ tên"
+        android:textColor="@color/text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/nhanvien_txtsdt_hoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txthoten_hoadon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_hoadon"
+        android:fontFamily="@font/lato_black"
+        android:text="sdt"
+        android:textColor="@color/text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/nhanvien_txtdiachinhan_hoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txtsdt_hoadon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_hoadon"
+        android:fontFamily="@font/lato_black"
+        android:text="dia chi nhận"
+        android:textColor="@color/text"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/nhanvien_txttongtien_hoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txtdiachinhan_hoadon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_hoadon"
+        android:fontFamily="@font/lato_black"
+        android:text="100000000"
+        android:textColor="#C51D1D"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/nhanvien_txtngaydat_hoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txttongtien_hoadon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_hoadon"
+        android:fontFamily="@font/lato_black"
+        android:text="ngày đặt"
+        android:textColor="@color/text"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/nhanvien_btnxacnhan_hoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txtngaydat_hoadon"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_hoadon"
+        android:background="#ED7B2E"
+        android:fontFamily="@font/lato_black"
+        android:padding="10dp"
+        android:text="xác nhận đã nhận đơn hàng"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+</RelativeLayout>

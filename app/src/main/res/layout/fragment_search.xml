@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/background2"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/id_cardview_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_search_custom"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ed_searchfragment"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/shape"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="nhập tên sản phẩm" />
+
+                <ImageView
+                    android:id="@+id/image_searchfragment"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_search" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_thoat_searchfragment"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@+id/id_cardview_search"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center"
+            android:text="Thoát"
+            android:textColor="#F36E28"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_searchfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:overScrollMode="never" />
+</LinearLayout>

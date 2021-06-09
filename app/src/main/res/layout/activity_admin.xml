@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminActivity">
+
+    <RelativeLayout
+        android:id="@+id/rltitleAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#F48044">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/raleway_black"
+            android:text="Trang quản trị"
+            android:textColor="@color/text"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtDangXuat_Admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background_text_dangxuat"
+            android:fontFamily="@font/lato_black"
+            android:gravity="center"
+            android:text="Đăng xuất"
+            android:textColor="@color/text"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/admin_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/admin_bottom_nv"
+        android:layout_below="@+id/rltitleAdmin" />
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/admin_bottom_nv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:cnb_menuResource="@menu/menu_bottom_nv_admin" />
+</RelativeLayout>

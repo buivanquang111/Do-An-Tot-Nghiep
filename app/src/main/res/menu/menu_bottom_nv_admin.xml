@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/admin_action_thanhvien"
+        android:title="Thành viên"
+        android:icon="@drawable/ic_thanhvien"
+        app:cnb_backgroundColor="#ACA8A8"
+        app:cnb_iconColor="@color/text"
+        app:cnb_textColor="@color/text"/>
+
+    <item
+        android:id="@+id/admin_action_sanpham"
+        android:title="Sản phẩm"
+        android:icon="@drawable/ic_sanpham"
+        app:cnb_backgroundColor="#ACA8A8"
+        app:cnb_iconColor="@color/text"
+        app:cnb_textColor="@color/text"/>
+
+    <item
+        android:id="@+id/admin_action_donhang"
+        android:title="Đơn hàng"
+        android:icon="@drawable/ic_donhang"
+        app:cnb_backgroundColor="#ACA8A8"
+        app:cnb_iconColor="@color/text"
+        app:cnb_textColor="@color/text"/>
+</menu>

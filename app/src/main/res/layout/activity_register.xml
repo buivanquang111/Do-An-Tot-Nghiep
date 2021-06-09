@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen_dangki"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#B7FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/lato_black"
+                android:gravity="center_horizontal"
+                android:text="Đăng kí"
+                android:textColor="#0C0C0C"
+                android:textSize="35dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_register"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_thongtincanhan"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_editext"
+            android:fontFamily="@font/lato_regular"
+            android:hint="họ tên"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/ed_tendangnhap"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_editext"
+            android:fontFamily="@font/lato_regular"
+            android:hint="tên đăng nhập"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/ed_sdt"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_editext"
+            android:fontFamily="@font/lato_regular"
+            android:hint="số điện thoại"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_editext"
+            android:fontFamily="@font/lato_regular"
+            android:hint="email"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/ed_pass"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_editext"
+            android:fontFamily="@font/lato_regular"
+            android:hint="mật khẩu"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/ed_diachi"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_editext"
+            android:fontFamily="@font/lato_regular"
+            android:hint="địa chỉ"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#f8a138"
+            android:fontFamily="@font/lato_black"
+            android:onClick="Register"
+            android:text="Register" />
+    </LinearLayout>
+
+</LinearLayout>

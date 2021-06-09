@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/admin_custom_item">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/admin_cvPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="50dp">
+
+        <ImageView
+            android:id="@+id/admin_image_item_thanhvien"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_person" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/admin_txtten_item_thanhvien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/admin_cvPhoto"
+        android:fontFamily="@font/lato_regular"
+        android:text="ABC"
+        android:textColor="@color/text"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/admin_txtemail_item_thanhvien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_txtten_item_thanhvien"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/admin_cvPhoto"
+        android:fontFamily="@font/lato_regular"
+        android:text="abc@gmail.com"
+        android:textColor="@color/text"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/admin_txtdiachi_item_thanhvien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_txtemail_item_thanhvien"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/admin_cvPhoto"
+        android:fontFamily="@font/lato_regular"
+        android:text="abcd"
+        android:textColor="@color/text"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/admin_ba_cham"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ba_cham" />
+
+    <LinearLayout
+        android:id="@+id/admin_thanhvien_menu"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/gradient_thanhvien_admin"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/admin_edit_item_thanhvien"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bo_vien_phai_thanhvien_admin"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_edit_thanhvien" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/admin_delete_item_thanhvien"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bo_vien_phai_thanhvien2_admin"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_delete_thanhvien" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/admin_close_item_thanhvien"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bo_vien_phai_thanhvien3_admin"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

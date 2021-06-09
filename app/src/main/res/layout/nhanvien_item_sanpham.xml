@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/admin_custom_item">
+
+    <ImageView
+        android:id="@+id/nhanvien_image_item_sanpham"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_person" />
+
+    <TextView
+        android:id="@+id/nhanvien_txtten_item_sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_sanpham"
+        android:fontFamily="@font/lato_black"
+        android:text="ABC"
+        android:textColor="@color/text"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/nhanvien_txtgia_item_sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txtten_item_sanpham"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_sanpham"
+        android:fontFamily="@font/lato_black"
+        android:text="giá"
+        android:textColor="#E82727"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/nhanvien_txtsoluong_item_sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txtgia_item_sanpham"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_sanpham"
+        android:fontFamily="@font/lato_black"
+        android:text="số lượng"
+        android:textColor="#636262"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/nhanvien_txtmota_item_sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhanvien_txtsoluong_item_sanpham"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/nhanvien_image_item_sanpham"
+        android:fontFamily="@font/lato_black"
+        android:text="mô tả"
+        android:textColor="#636262"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/nhanvien_ba_cham_sanpham"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ba_cham" />
+
+    <LinearLayout
+        android:id="@+id/nhanvien_sanpham_menu"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/gradient_thanhvien_admin"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/nhanvien_edit_item_sanpham"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bo_vien_phai_thanhvien_admin"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_edit_thanhvien" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nhanvien_delete_item_sanpham"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bo_vien_phai_thanhvien2_admin"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_delete_thanhvien" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nhanvien_close_item_sanpham"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bo_vien_phai_thanhvien3_admin"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_close" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
